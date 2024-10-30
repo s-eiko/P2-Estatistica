@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora - Função linear quadrática</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Calculadora - Função linear quadrática</h1> <br>
+    <div id="calculadoraContainer">
+        <form name="formCalculadora" id="formCalculadora" method="get" autocomplete="off" class="calculadoraForm" action="/pt/calculators/probability-statistics/quadratic-regression-calculator">
+            <h2>Digite os números entre vírgulas</h2>
+            <div class="colunaForm">
+                <div class="input">
+                    <label for="vX">Valores de x:</label> <br>
+                    <textarea name="xs" id="vX" cols="51" rows="2" required></textarea> <br>
+                </div>
+                <div id="msgErroX"></div>
+            </div>
+            <div class="colunaForm">
+                <div class="input">
+                    <label for="vY">Valores de y:</label> <br>
+                    <textarea name="ys" id="vY" cols="51" rows="2" required></textarea> <br>
+                </div>
+                <div id="msgErroY"></div>
+            </div>
+            <div id="msgErro"></div>
+            <div class="submit">
+                <input type="submit" id="btCalcular" value="Calcular" class="botão">
+                <input type="button" id="btLimpar" value="Limpar" class="botão">
+            </div>
+        </form>
+    </div>
+
+    <div id="resultado">
+        <p id="somaN"></p> <br>
+        <table>
+            <tr>
+                <th>X</th>
+                <th>Y</th>
+                <th>XY</th>
+                <th>X<span>2</span></th>
+                <th>X<span>2</span>Y</th>
+                <th>X<span>3</span></th>
+                <th>X<span>4</span></th>
+                <th>Y<span>2</span></th>
+            </tr>
+            <div id="dados"></div>
+        </table>
+    </div>
+
+    <script src="function.js"></script>
+</body>
+</html>
