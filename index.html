@@ -9,19 +9,19 @@
 <body>
     <h1>Calculadora - Função linear quadrática</h1> <br>
     <div id="calculadoraContainer">
-        <form name="formCalculadora" id="formCalculadora" method="get" autocomplete="off" class="calculadoraForm" action="/pt/calculators/probability-statistics/quadratic-regression-calculator">
+        <form id="formCalculadora">
             <h2>Digite os números entre vírgulas</h2>
             <div class="colunaForm">
                 <div class="input">
                     <label for="vX">Valores de x:</label> <br>
-                    <textarea name="xs" id="vX" cols="51" rows="2" required></textarea> <br>
+                    <textarea id="vX" cols="51" rows="2" value=""></textarea> <br>
                 </div>
                 <div id="msgErroX"></div>
             </div>
             <div class="colunaForm">
                 <div class="input">
                     <label for="vY">Valores de y:</label> <br>
-                    <textarea name="ys" id="vY" cols="51" rows="2" required></textarea> <br>
+                    <textarea id="vY" cols="51" rows="2" value=""></textarea> <br>
                 </div>
                 <div id="msgErroY"></div>
             </div>
@@ -35,7 +35,7 @@
 
     <div id="resultado">
         <p id="somaN"></p> <br>
-        <table>
+        <table id="tabela">
             <tr>
                 <th>X</th>
                 <th>Y</th>
@@ -46,8 +46,8 @@
                 <th>X<span>4</span></th>
                 <th>Y<span>2</span></th>
             </tr>
-            <div id="dados"></div>
         </table>
+        <p id="dados"></p>
     </div>
 
     <script src="function.js"></script>
