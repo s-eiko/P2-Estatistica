@@ -99,7 +99,7 @@ function calcular() {
 
         document.getElementById("tabela").innerHTML = intabela;
 
-        document.getElementById("dados").innerHTML = "<p class='texto'>O valor de A é: " + a + ". <br>O valor de B é: " + b + ". <br>O valor de c é: " + c + ". <br>O coeficiente de determinação é: " + r2 + ".</p>";
+        document.getElementById("dados").innerHTML = "<p class='texto'>O valor de A é: " + a.toFixed(2) + ". <br>O valor de B é: " + b.toFixed(2) + ". <br>O valor de C é: " + c.toFixed(2) + ". <br>O coeficiente de determinação é: " + r2 + ".</p>";
     }
 }
 
