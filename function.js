@@ -32,11 +32,11 @@ function calcular() {
     console.log(vetorX);
     console.log(vetorY);
 
-    if (document.getElementById("vX").value == "") {
-        document.getElementById("msgErroX").innerHTML = "<p class='erro'>Campo obrigatório</p>";
+    if (vetorX.length < 3) {
+        document.getElementById("msgErroX").innerHTML = "<p class='erro'>Mínimo de 3 valores</p>";
     }
-    else if (document.getElementById("vY").value == "") {
-        document.getElementById("msgErroY").innerHTML = "<p class='erro'>Campo obrigatório</p>";
+    else if (vetorX.length < 3) {
+        document.getElementById("msgErroY").innerHTML = "<p class='erro'>Mínimo de 3 valores</p>";
     }
     else if (vetorX.length != vetorY.length) {
         document.getElementById("msgErro").innerHTML = "<p class='erro'>A quantidade de valores X e Y tem que ser iguais</p>";
@@ -109,4 +109,7 @@ function limpar() {
     document.getElementById("somaN").innerHTML = "";
     document.getElementById("tabela").innerHTML = "";
     document.getElementById("dados").innerHTML = "";
+    document.getElementById("msgErroX").innerHTML = "";
+    document.getElementById("msgErroY").innerHTML = "";
+    document.getElementById("msgErro").innerHTML = "";
 }
