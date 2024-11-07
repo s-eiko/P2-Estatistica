@@ -65,7 +65,7 @@ html, body {
     display: block;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1081px) {
     #calculadoraContainer {
         display: grid;
         grid-template-columns: 1fr 1fr;
