@@ -87,19 +87,19 @@ function calcular() {
 
         var r2 = coeficiente(vExpl, vNExpl);
 
-        document.getElementById("somaN").innerHTML = "<p>A quantidade de elementos é: " + n + ".</p>";
+        document.getElementById("somaN").innerHTML = "<p class='texto'>A quantidade de elementos é: " + n + ".</p>";
 
-        var intabela = "<table> <thead> <tr> <th>X</th> <th>Y</th> <th>XY</th> <th>X<span>2</span></th> <th>X<span>2</span>Y</th> <th>X<span>3</span></th> <th>X<span>4</span></th> </tr> </thead> <tbody>";
+        var intabela = "<table> <thead> <tr> <th>X</th> <th>Y</th> <th>XY</th> <th>X<sup>2</sup></th> <th>X<sup>2</sup>Y</th> <th>X<sup>3</sup></th> <th>X<sup>4</sup></th> </tr> </thead> <tbody>";
 
         for (let i = 0; i < n; i++) {
             intabela += "<tr> <td>" + vetorX[i] + "</td> <td>" + vetorY[i] + "</td> <td>" + vetorXY[i] + "</td> <td>" + vetorX2[i] + "</td> <td>" + vetorX2Y[i] + "</td> <td>" + vetorX3[i] + "</td> <td>" + vetorX4[i] + "</td> </tr>";
         }
 
-        intabela += "</tbody> </table>"
+        intabela += "</tbody> </table> <br>"
 
         document.getElementById("tabela").innerHTML = intabela;
 
-        document.getElementById("dados").innerHTML = "<p>O valor de A é: " + a + ". <br>O valor de B é: " + b + ". <br>O valor de c é: " + c + ". <br>O coeficiente de determinação é: " + r2 + ".</p>";
+        document.getElementById("dados").innerHTML = "<p class='texto'>O valor de A é: " + a + ". <br>O valor de B é: " + b + ". <br>O valor de c é: " + c + ". <br>O coeficiente de determinação é: " + r2 + ".</p>";
     }
 }
 

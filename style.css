@@ -1,0 +1,96 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #c4ffeb;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+#título, .texto, .botão, .erro, th, td, .input {
+    color: #312736;
+    font-family: 'DM Sans', sans-serif;
+    text-align: center;
+}
+
+#título {
+    font-weight: bold;
+    font-size: 200%;
+    margin: 40px 65px 0px;
+    margin-bottom: 20px;
+}
+
+#expnum {
+    margin-bottom: 50px;
+}
+
+.texto {
+    font-weight: lighter;
+    font-size: 150%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.input {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 150%;
+}
+
+#submit {
+    display: flex;
+    justify-content: center;
+    gap: 14%;
+}
+
+.erro {
+    font-size: 150%;
+}
+
+.botão {
+    background-color: #d9d9d9;
+    border: none;
+    font-size: 150%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 10px 24px;
+    border-radius: 8px;
+}
+
+.botão:hover {
+    background-color: #312736;
+    color: #d9d9d9;
+}
+
+.resultado {
+    display: block;
+}
+
+#formCalculadora {
+    display: block;
+}
+
+@media (min-width: 800px) {
+    #calculadoraContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+}
+
+th, td {
+    font-size: 150%;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    table-layout: fixed;
+    width: 80%;
+}
+
+table, thead, tbody, tr, td, th {
+    border: 3px solid #312736;
+    border-collapse: collapse;
+}

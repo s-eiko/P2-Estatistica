@@ -7,36 +7,35 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Calculadora - Função linear quadrática</h1> <br>
+    <h1 id="título">Calculadora - Função linear quadrática</h1> <br>
     <div id="calculadoraContainer">
         <form id="formCalculadora">
-            <h2>Digite os números entre espaços</h2>
+            <h2 class="texto" id="expnum">Digite os números entre espaços</h2>
             <div class="colunaForm">
-                <div class="input">
-                    <label for="vX">Valores de x:</label> <br>
-                    <textarea id="vX" cols="51" rows="2" value=""></textarea> <br>
+                <div>
+                    <label for="vX" class="texto">Valores de x:</label> <br>
+                    <textarea id="vX" cols="30" rows="1" value="" class="input"></textarea> <br>
                 </div>
                 <div id="msgErroX"></div>
             </div>
             <div class="colunaForm">
-                <div class="input">
-                    <label for="vY">Valores de y:</label> <br>
-                    <textarea id="vY" cols="51" rows="2" value=""></textarea> <br>
+                <div>
+                    <label for="vY" class="texto">Valores de y:</label> <br>
+                    <textarea id="vY" cols="30" rows="1" value="" class="input"></textarea> <br>
                 </div>
                 <div id="msgErroY"></div>
             </div>
             <div id="msgErro"></div>
-            <div class="submit">
+            <div id="submit">
                 <input type="button" id="btCalcular" value="Calcular" class="botão">
                 <input type="button" id="btLimpar" value="Limpar" class="botão">
             </div>
         </form>
-    </div>
-
-    <div id="resultado">
-        <div id="somaN"></div> <br>
-        <div id="tabela"></div>
-        <div id="dados"></div>
+        <div id="resultado">
+            <div id="somaN"></div> <br>
+            <div id="tabela"></div>
+            <div id="dados"></div>
+        </div>
     </div>
 
     <script src="function.js"></script>
