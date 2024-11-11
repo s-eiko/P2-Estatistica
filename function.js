@@ -87,19 +87,24 @@ function calcular() {
 
         var r2 = coeficiente(vExpl, vNExpl);
 
-        document.getElementById("somaN").innerHTML = "<p class='texto'>A quantidade de elementos é: " + n + ".</p>";
+        a = a.toFixed(2);
+        b = b.toFixed(2);
+        c = c.toFixed(2);
 
-        var intabela = "<table> <thead> <tr> <th>X</th> <th>Y</th> <th>XY</th> <th>X<sup>2</sup></th> <th>X<sup>2</sup>Y</th> <th>X<sup>3</sup></th> <th>X<sup>4</sup></th> </tr> </thead> <tbody>";
-
-        for (let i = 0; i < n; i++) {
-            intabela += "<tr> <td>" + vetorX[i] + "</td> <td>" + vetorY[i] + "</td> <td>" + vetorXY[i] + "</td> <td>" + vetorX2[i] + "</td> <td>" + vetorX2Y[i] + "</td> <td>" + vetorX3[i] + "</td> <td>" + vetorX4[i] + "</td> </tr>";
+        if (a >= 0) {
+            a = "+" + a;
+        }
+        if (b >= 0) {
+            b = "+" + b;
         }
 
-        intabela += "</tbody> </table> <br>"
+        document.getElementById("cap").innerHTML = "<h2 class='texto' id='expnum'>Resultados</h2>"
 
-        document.getElementById("tabela").innerHTML = intabela;
+        document.getElementById("dados").innerHTML = "<p class='texto'>Y estimado:<br>ŷ = " + c + b + "x" + a + "x<sup>2</sup></p>";
 
-        document.getElementById("dados").innerHTML = "<p class='texto'>O valor de A é: " + a.toFixed(2) + ". <br>O valor de B é: " + b.toFixed(2) + ". <br>O valor de C é: " + c.toFixed(2) + ". <br>O coeficiente de determinação é: " + r2 + ".</p>";
+        document.getElementById("dados").innerHTML += "<p class='texto'>Domínio = [" + vetorX[0] + ";" + vetorX[vetorX.length - 1] +"]<br>Coeficiente de determinação (r<sup>2</sup>) = " + (r2 *100).toFixed(2) + "</p>";
+
+        document.getElementById("dados").innerHTML += "<p class='texto'>a = " + a + "<br>b = " + b + "<br>c = " + c;
     }
 }
 
