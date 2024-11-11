@@ -102,7 +102,7 @@ function calcular() {
 
         document.getElementById("dados").innerHTML = "<p class='texto'>Y estimado:<br>ŷ = " + c + b + "x" + a + "x<sup>2</sup></p>";
 
-        document.getElementById("dados").innerHTML += "<p class='texto'>Domínio = [" + vetorX[0] + ";" + vetorX[vetorX.length - 1] +"]<br>Coeficiente de determinação (r<sup>2</sup>) = " + (r2 *100).toFixed(2) + "</p>";
+        document.getElementById("dados").innerHTML += "<p class='texto'>Domínio = [" + vetorX[0] + ";" + vetorX[vetorX.length - 1] +"]<br>Coeficiente de determinação (r<sup>2</sup>) = " + (r2 *100).toFixed(2) + "%</p>";
 
         document.getElementById("dados").innerHTML += "<p class='texto'>a = " + a + "<br>b = " + b + "<br>c = " + c;
     }
