@@ -3,6 +3,8 @@
 ## Sobre
 Calculadora de função quadrática. Descobre os valores de a, b, c e coeficiente de determinação. Trabalho realizado para a matéria de estatística.
 
+Acesse em: https://s-eiko.github.io/P2-Estatistica/
+
 ## Membros do grupo
 - Mariana Seiko Fukuoka
 - Taynara Carneiro dos Santos
