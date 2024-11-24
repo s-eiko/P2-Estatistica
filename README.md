@@ -1,9 +1,9 @@
 # Calculadora: Regressão linear quadrática - P2: Estatística
 
 ## Sobre
-Calculadora de função quadrática. Descobre os valores de a, b, c e coeficiente de determinação. Trabalho realizado para a matéria de estatística.
+Calculadora de função quadrática. Descobre os valores de a, b e c, equação de y estimado, coeficiente de determinação e domínio da função. Trabalho realizado para a matéria de estatística.
 
-Acesse em: https://s-eiko.github.io/P2-Estatistica/
+Acesse em: https://s-eiko.github.io/Quadratic-regression-calculator/
 
 ## Ferramentas utilizadas
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
